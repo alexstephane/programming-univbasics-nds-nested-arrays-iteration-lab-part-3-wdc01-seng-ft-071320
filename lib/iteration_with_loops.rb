@@ -11,7 +11,7 @@ sentence = mixed_data_1.flat_map do |items|
   items.select { |item| item.is_a?(String) }
 end.join(" ")
 
-[sentence]
+sentence
 
 
 end
