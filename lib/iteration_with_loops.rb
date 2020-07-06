@@ -7,7 +7,7 @@ def join_nested_strings(src)
   ["studied", 101, 233, "Ruby"]
 ]
  
-sentence = mixed_data_1.flat_map do |items|
+sentence = src.flat_map do |items|
   items.select { |item| item.is_a?(String) }
 end.join(" ")
 
